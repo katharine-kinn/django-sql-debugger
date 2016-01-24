@@ -1,0 +1,89 @@
+div#sql_debugger_view {
+    font-family: sans-serif;
+    font-size: 14px;
+    position:fixed;
+    left:60px;
+    bottom:10px;
+    display: none;
+    overflow: auto;
+    width:70%;
+    min-height:500px;
+    height:90%;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+div#sql_debugger_button {
+    display: table-cell;
+    font-family: sans-serif;
+    position:fixed;
+    bottom: 10px;
+    left:10px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);    
+    text-align: center;
+}
+
+span#sql_debugger_requests_count {
+    line-height: 40px;
+}
+
+div#sql_debugger_button:hover {
+    opacity: 1;
+}
+
+div.sql_debugger_request_box {
+    border:1px solid gray;
+    margin:10px;
+}
+
+div.sql_debugger_request_box_header {
+    padding:5px;
+    background: gray;
+    color:white;
+    cursor:pointer;
+    font-size: 14px;
+}
+
+div.sql_debugger_request_box_contents {
+    display:none;
+    padding:5px;
+}
+
+div.sql_debugger_sql_box {
+    padding:10px;
+}
+
+div.sql_debugger_traceback {
+    padding-top:5px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+div.sql_debugger_traceback_header {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+div.sql_debugger_traceback_contents {
+    display:none;
+    padding-left: 20px;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+span.sql_debugger_traceback_caller_file {
+    color:gray;
+}
+
+span.sql_debugger_traceback_caller_method {
+}
+
+span.sql_debugger_traceback_called_func {
+    padding-left: 10px;
+}

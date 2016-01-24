@@ -1,0 +1,16 @@
+{% load staticfiles %}
+{% load sql_debug_info %}
+
+<link rel="stylesheet" href="{% static "sql_debugger/styles.css" %}" type="text/css">
+
+<div id="sql_debugger_rq_path_info" style="display:none">{{ request.get_full_path }}</div>
+<div id="sql_debugger_rq_sql_info" style="display:none">{% sql_debug_info %}</div>
+
+<div id="sql_debugger_view">
+</div>
+
+<div id="sql_debugger_button">
+    <span id="sql_debugger_requests_count">0</span>
+</div>
+
+<script type="text/javascript" src="{% static "sql_debugger/debug_view.js" %}"></script>

@@ -12,7 +12,7 @@ setup(
     version='0.1',
     packages=['sql_debugger'],
     include_package_data=True,
-    license='BSD License',  # example license
+    license='MIT License', 
     description='Django app that helps controlling database requests count',
     long_description=README,
     url='https://github.com/katharine-kinn/django-sql-debugger',
@@ -23,14 +23,12 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License', # example license
+        'License :: MIT License', # example license
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         # Replace these appropriately if you are stuck on Python 2.
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
-        'Topic :: Internet :: WWW/HTTP',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
 )

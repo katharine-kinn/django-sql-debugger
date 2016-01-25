@@ -15,7 +15,8 @@ setup(
     license='BSD License',  # example license
     description='Django app that helps controlling database requests count',
     long_description=README,
-    url='http://www.renegade-studio.com/',
+    url='https://github.com/katharine-kinn/django-sql-debugger',
+    download_url = 'https://github.com/katharine-kinn/django-sql-debugger/tarball/0.1'
     author='Catherine',
     author_email='katherine.goncharova@gmail.com',
     classifiers=[

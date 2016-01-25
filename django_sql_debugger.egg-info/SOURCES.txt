@@ -13,9 +13,6 @@ sql_debugger/backends/__init__.py
 sql_debugger/backends/mysql/.DS_Store
 sql_debugger/backends/mysql/__init__.py
 sql_debugger/backends/mysql/base.py
-sql_debugger/static/.DS_Store
-sql_debugger/static/sql_debugger/debug_view.js
-sql_debugger/static/sql_debugger/styles.css
 sql_debugger/templates/.DS_Store
 sql_debugger/templates/sql_debugger/base.html
 sql_debugger/templatetags/.DS_Store

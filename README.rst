@@ -2,10 +2,21 @@
 SQL Debugger
 =====
 
+.. image:: https://badge.fury.io/py/django-sql-debugger.svg
+    :target: https://badge.fury.io/py/django-sql-debugger
+
 django-sql-debugger is an app that helps controlling number of SQL during your HTTPRequests, including AJAX.
 Based on custom database backend, it currently supports only MySQL.
 
 *Warning: the app currently works under Django 1.6.5 and is not tested against other versions*
+
+Installation
+------------
+
+You can install the app with PyPi::
+    
+    pip install django-sql-debugger
+
 
 Quick start
 -----------

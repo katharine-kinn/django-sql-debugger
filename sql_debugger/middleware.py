@@ -2,6 +2,8 @@ import json
 from django.db import connections, connection
 from django.conf import settings
 
+__all__ = ['SQLDebugMiddleware']
+
 class SQLDebugMiddleware(object):
 
     def process_response(self, request, response):
@@ -9,7 +11,7 @@ class SQLDebugMiddleware(object):
         if not settings.DEBUG:
             return response
 
-        if request.is_ajax(): #TODO: if not JSON?
+        if request.is_ajax():
 
             if response.status_code / 100 == 2:
                 try:
@@ -33,6 +35,10 @@ class SQLDebugMiddleware(object):
                         if rp.startswith(p):
                             res[k] = rp
 
-                response.content = json.dumps({"errordata": res, "path": request.get_full_path()})
+                response.content = json.dumps(
+                    {
+                        "errordata": res, "path": request.get_full_path()
+                    }
+                )
 
         return response

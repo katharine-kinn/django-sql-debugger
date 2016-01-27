@@ -1,4 +1,6 @@
-import traceback, datetime, time
+import traceback
+import datetime
+import time
 
 from django.db.backends.mysql.base import DatabaseWrapper, CursorWrapper
 from django.db.backends import util
@@ -10,7 +12,6 @@ class TracebackCursorWrapper(util.CursorWrapper):
         super(TracebackCursorWrapper, self).__init__(cursor, db)
     
     def execute(self, sql, params=None):
-
         try:
             return super(TracebackCursorWrapper, self).execute(sql, params)
         finally:
